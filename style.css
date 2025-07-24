@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.atm {
+  height: 500px;
+  width: 300px;
+  background: #7b8994;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 20px gray;
+  text-align: center;
+  color: white;
+}
+
+.atm-screen {
+  height: 200px;
+  background: black;
+  color: black;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#atm > button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  width: 60%;
+  background-color: #0f0;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px #080;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+#atm > button:hover {
+  background-color: #0c0;
+}
+
+#atm > button:active {
+  transform: scale(0.8);
+  box-shadow: 0 2px #060;
+}
+
+#atm > .exit {
+  background-color: red;
+  box-shadow: 0 4px rgb(128, 0, 0);
+  color: white;
+}
+
+#atm > .exit:hover {
+  background-color: rgb(128, 0, 0);
+}
+
+#atm > .exit:active {
+  transform: scale(0.8);
+  box-shadow: 0 2px rgb(128, 0, 0);
+}
+
+#atm > input {
+  height: 20px;
+  width: 70%;
+  margin-top: 20px;
+  padding: 5px;
+  outline: none;
+}
+
+#atm > p {
+  margin-top: 30px;
+}
+
+#atm > img {
+  margin-top: 30px;
+}
+
+.atm-slot {
+  width: 150px;
+  height: 15px;
+  background: black;
+  margin: 15px auto;
+  border-radius: 4px;
+}
+
+.atm-keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.atm-keypad > button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  width: 100%;
+  background-color: #0f0;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px #080;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.atm-keypad > button:hover {
+  background-color: #0c0;
+}
+
+.atm-keypad > button:active {
+  transform: scale(0.8);
+  box-shadow: 0 2px #060;
+}
+
+@media screen and (max-width: 768px) {
+  .atm {
+    height: 450px;
+    width: 300px;
+  }
+  .atm-keypad {
+    margin-top: 50px;
+  }
+  .atm-keypad > button {
+    padding: 13px;
+    font-size: 13px;
+  }
+  #atm-screen {
+    height: 200px;
+    width: 270px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .atm {
+    height: 450px;
+    width: 300px;
+  }
+  .atm-keypad {
+    margin-top: 50px;
+  }
+  .atm-keypad > button {
+    padding: 10px;
+    font-size: 13px;
+  }
+  #atm-screen {
+    height: 200px;
+    width: 270px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .atm {
+    height: 400px;
+    width: 250px;
+  }
+  .atm-keypad {
+    margin-top: 50px;
+  }
+  .atm-keypad > button {
+    padding: 10px;
+    font-size: 13px;
+  }
+  #atm-screen {
+    height: 150px;
+    width: 220px;
+  }
+  #atm > button {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .atm {
+    height: 400px;
+    width: 250px;
+    margin-top: 0px;
+  }
+  .atm-keypad {
+    margin-top: 20px;
+  }
+  .atm-keypad > button {
+    padding: 10px;
+    font-size: 13px;
+  }
+  #atm-screen {
+    height: 100px;
+    width: 170px;
+  }
+}
